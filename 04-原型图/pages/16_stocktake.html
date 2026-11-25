@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>盘点任务 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="on" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>盘点任务</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>盘点任务</h1><div class="sub" style="margin-bottom:0">PD20261101-01 · 按货架生成 · 核对系统在库件与现场实物</div></div>
+  <div class="acts"><button class="btn">导出盘点表</button><button class="btn">生成新盘点任务</button>
+  <button class="btn primary">提交复核结果</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">盘点货架</div><div class="v">6 个</div></div>
+  <div><div class="k">系统在库</div><div class="v">441 件</div></div>
+  <div><div class="k">实盘件数</div><div class="v">437 件</div></div>
+  <div><div class="k">差异（盈/亏/错位）</div><div class="v"><span style="color:#1F7653">1</span> / <span style="color:#B22B31">3</span> / <span style="color:#8A6117">0</span></div></div>
+</div>
+<div class="card" style="margin-bottom:14px">
+  <div class="tabs" style="margin-bottom:0">
+    <a class="on" href="#">全部货架<span class="c">6</span></a><a href="#">有差异<span class="c">3</span></a>
+    <a href="#">已通过<span class="c">3</span></a><a href="#">历史盘点<span class="c">12</span></a>
+  </div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div class="card" style="flex:1;min-width:0">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <h2 style="margin:0">盘点结果</h2>
+      <span style="font-size:12px;color:#5C6B78">差异不能直接删除快件，须经异常处理与复核后调整</span>
+    </div>
+    <div class="tbl-wrap"><table><thead><tr><th>货架</th><th class="num">系统在库</th><th class="num">实盘</th><th class="num">盘盈</th><th class="num">盘亏</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td>A-01</td><td>118</td><td>117</td><td>0</td><td>1</td><td><span class="tag t-amber">待复核</span></td><td><a href="#">复核</a></td></tr><tr><td>A-02</td><td>104</td><td>104</td><td>0</td><td>0</td><td><span class="tag t-green">已通过</span></td><td><a href="#">查看</a></td></tr><tr><td>A-04</td><td>120</td><td>119</td><td>1</td><td>0</td><td><span class="tag t-amber">待复核</span></td><td><a href="#">复核</a></td></tr><tr><td>B-02</td><td>54</td><td>52</td><td>0</td><td>2</td><td><span class="tag t-amber">待复核</span></td><td><a href="#">复核</a></td></tr><tr><td>C-01</td><td>36</td><td>36</td><td>0</td><td>0</td><td><span class="tag t-green">已通过</span></td><td><a href="#">查看</a></td></tr><tr><td>D-01</td><td>9</td><td>9</td><td>0</td><td>0</td><td><span class="tag t-green">已通过</span></td><td><a href="#">查看</a></td></tr></tbody></table></div>
+    <div style="margin-top:14px;background:#FDF6E8;border:1px solid #EFDFC0;border-radius:6px;padding:12px 14px;font-size:12px;color:#6B5217;line-height:1.9">
+      <b>差异复核提示</b>　A-01 盘亏 1 件（运单号 SF1234567890333），已生成异常单 YC20261101-004 待处理；
+      A-04 盘盈 1 件为跨站错分件，需登记后转寄。复核通过前不得调整快件状态。
+    </div>
+  </div>
+  <div class="card" style="width:330px;flex:0 0 330px">
+    <h2>差异明细</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>运单号</th><th>货架</th><th>差异类型</th><th>处理</th></tr></thead><tbody><tr><td class="nowrap">SF1234567890333</td><td>A-01</td><td><span class="tag t-red">盘亏</span></td><td>已转异常</td></tr><tr><td class="nowrap">SF1234567890551</td><td>A-04</td><td><span class="tag t-green">盘盈</span></td><td>待登记</td></tr><tr><td class="nowrap">ZTO7712345678111</td><td>B-02</td><td><span class="tag t-red">盘亏</span></td><td>待复核</td></tr><tr><td class="nowrap">JD0098765432777</td><td>B-02</td><td><span class="tag t-red">盘亏</span></td><td>待复核</td></tr></tbody></table></div>
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="btn" style="flex:1">转异常处理</button>
+      <button class="btn ghost" style="flex:1">通知负责人</button>
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>取件通知 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#17486C">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="on" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">配置</div>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>取件通知</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">林浩然<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">驿站员工</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>取件通知</h1><div class="sub" style="margin-bottom:0">对已上架快件生成待取通知，记录电话与站内消息通知结果</div></div>
+  <div class="acts"><button class="btn">导出通知清单</button><button class="btn primary">批量通知选中</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">待通知</div><div class="v" style="color:#8A6117">9</div></div>
+  <div><div class="k">今日已通知</div><div class="v" style="color:#1F7653">214</div></div>
+  <div><div class="k">通知 3 次以上</div><div class="v" style="color:#B22B31">27</div></div>
+  <div><div class="k">通知后取件率</div><div class="v">81.4%</div></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div class="card" style="flex:1;min-width:0">
+    <div class="tabs"><a class="on" href="#">待通知<span class="c">9</span></a><a href="#">已通知<span class="c">214</span></a>
+      <a href="#">通知失败<span class="c">4</span></a></div>
+    <div class="tbl-wrap"><table><thead><tr><th>运单号</th><th>收件人</th><th>手机号</th><th class="num">通知次数</th><th>最后通知时间</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td class="nowrap">SF1234567890123</td><td>陈雨桐</td><td class="nowrap">138****6621</td><td>2</td><td class="nowrap">2026-10-29 09:12</td><td><span class="tag t-green">已通知</span></td><td><a href="#">再次通知</a> · <a href="#">记录结果</a></td></tr><tr><td class="nowrap">JD0098765432101</td><td>王思远</td><td class="nowrap">159****3308</td><td>3</td><td class="nowrap">2026-10-31 10:05</td><td><span class="tag t-green">已通知</span></td><td><a href="#">再次通知</a> · <a href="#">记录结果</a></td></tr><tr><td class="nowrap">YTO5566778899001</td><td>黄子豪</td><td class="nowrap">137****2045</td><td>2</td><td class="nowrap">2026-10-30 16:22</td><td><span class="tag t-amber">待通知</span></td><td><a href="#">立即通知</a> · <a href="#">记录结果</a></td></tr><tr><td class="nowrap">ZTO7712345699002</td><td>郑一鸣</td><td class="nowrap">186****9931</td><td>3</td><td class="nowrap">2026-10-31 09:40</td><td><span class="tag t-green">已通知</span></td><td><a href="#">再次通知</a> · <a href="#">记录结果</a></td></tr><tr><td class="nowrap">JT9988776655443</td><td>刘子轩</td><td class="nowrap">133****1129</td><td>1</td><td class="nowrap">2026-10-27 11:18</td><td><span class="tag t-amber">待通知</span></td><td><a href="#">立即通知</a> · <a href="#">记录结果</a></td></tr><tr><td class="nowrap">YD3322110099887</td><td>周晓彤</td><td class="nowrap">188****8834</td><td>1</td><td class="nowrap">2026-10-31 10:30</td><td><span class="tag t-green">已通知</span></td><td><a href="#">再次通知</a> · <a href="#">记录结果</a></td></tr></tbody></table></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;color:#5C6B78"><div>共 223 条 · 每页 <select style="width:78px;height:30px;display:inline-block"><option>10</option><option>20</option><option>50</option></select> 条</div><div style="display:flex;gap:6px;align-items:center"><button class="btn sm">上一页</button><span style="padding:0 6px">1 / 23</span><button class="btn sm">下一页</button></div></div>
+  </div>
+  <div class="card" style="width:320px;flex:0 0 320px">
+    <h2>通知内容预览</h2>
+    <div style="border:1px solid #DCE5EC;border-radius:8px;padding:14px;font-size:13px;line-height:1.9;background:#F9FCFE">
+      【驿通快递驿站】您好，您的顺丰速运包裹（尾号 <b>0123</b>）已到南湖大学城站，取件码
+      <b style="color:#0F3B5D;font-size:16px">483920</b>，货架 A-03。<br>
+      营业时间 08:00-21:30，逾期 7 天将退回，请及时领取。
+    </div>
+    <div style="margin-top:14px;font-size:12px;color:#5C6B78;line-height:1.9">
+      <b style="color:#16232E;display:block;margin-bottom:4px">通知方式</b>
+      <label style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><input type="checkbox" checked style="height:auto;width:auto">电话通知（手工记录结果）</label>
+      <label style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><input type="checkbox" checked style="height:auto;width:auto">站内消息（收件人端可见）</label>
+      <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="height:auto;width:auto">短信网关（未接入，仅留接口）</label>
+    </div>
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid #DCE5EC;font-size:12px;color:#5C6B78;line-height:1.9">
+      <b style="color:#16232E;display:block;margin-bottom:4px">隐私说明</b>
+      列表中手机号默认脱敏，仅具备「查看完整号码」权限的员工可解开，解开动作记入操作日志。
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

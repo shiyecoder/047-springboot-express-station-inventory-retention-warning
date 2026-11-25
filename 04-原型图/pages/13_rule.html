@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>规则与权重 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="on" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>规则与权重</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>规则与权重配置</h1>
+    <div class="sub" style="margin-bottom:0">「滞留风险与货架位置推荐」的权重、阈值与版本管理 · 当前生效 v3</div></div>
+  <div class="acts"><button class="btn">恢复默认</button><button class="btn">试算</button>
+  <button class="btn primary">保存并发布新版本</button></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">因素权重</h2>
+        <span class="tag t-green">合计 100% · 校验通过</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th>因素</th><th>权重 (%)</th><th>占比</th><th>说明</th></tr></thead><tbody><tr><td class="nowrap">包裹尺寸匹配</td><td><input value="20" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:80%"></i></div></td><td>件型与货架层高、深度、承重的匹配程度</td></tr><tr><td class="nowrap">货架剩余容量</td><td><input value="25" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:100%"></i></div></td><td>目标货架剩余位数占容量的比例</td></tr><tr><td class="nowrap">快递公司分区</td><td><input value="15" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:60%"></i></div></td><td>是否落在该快递公司的约定分区</td></tr><tr><td class="nowrap">入库时长</td><td><input value="25" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:100%"></i></div></td><td>按在库天数映射，超过阈值后陡增</td></tr><tr><td class="nowrap">通知次数</td><td><input value="10" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:40%"></i></div></td><td>已通知次数越多，催取优先级越高</td></tr><tr><td class="nowrap">特殊件标记</td><td><input value="5" style="width:88px;text-align:right"></td><td><div class="meter" style="width:120px;margin:0"><i style="width:20%"></i></div></td><td>贵重、生鲜、易碎件优先分配专用货位</td></tr></tbody></table></div>
+      <div style="margin-top:12px;padding:10px 14px;background:#F4F8FB;border-radius:6px;font-size:12px;color:#5C6B78;line-height:1.9">
+        权重合计必须等于 100%，否则无法发布。修改后仅影响新计算或主动重新计算的数据，历史计算快照保留原版本号。
+      </div>
+    </div>
+    <div class="card">
+      <h2>滞留分级阈值（按站点可不同）</h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+        <div><div style="font-size:12px;color:#5C6B78;margin-bottom:6px">正常上限（天）</div><input value="3" style="width:100%"></div>
+        <div><div style="font-size:12px;color:#5C6B78;margin-bottom:6px">即将滞留上限</div><input value="5" style="width:100%"></div>
+        <div><div style="font-size:12px;color:#5C6B78;margin-bottom:6px">已滞留上限</div><input value="9" style="width:100%"></div>
+        <div><div style="font-size:12px;color:#5C6B78;margin-bottom:6px">超期自动退件</div><input value="10" style="width:100%"></div>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:20px;font-size:13px">
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="height:auto;width:auto">满架时禁止继续推荐该货架</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="height:auto;width:auto">贵重件强制优先 D 区</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="height:auto;width:auto">允许跨区推荐</label>
+      </div>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">版本记录</h2><span style="font-size:12px;color:#5C6B78">历史版本仅供查看，不可回滚覆盖</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th>版本</th><th>生效时间</th><th>调整内容</th><th>操作人</th><th>状态</th></tr></thead><tbody><tr><td>v3</td><td>2026-10-20 09:00</td><td>入库时长权重 20→25，通知次数 15→10</td><td>周敏</td><td><span class="tag t-green">生效中</span></td></tr><tr><td>v2</td><td>2026-09-15 10:30</td><td>新增特殊件标记 5%，容量权重 30→25</td><td>周敏</td><td><span class="tag t-gray">已归档</span></td></tr><tr><td>v1</td><td>2026-08-01 09:00</td><td>初始版本，六因素均分</td><td>系统初始化</td><td><span class="tag t-gray">已归档</span></td></tr></tbody></table></div>
+    </div>
+  </div>
+  <div style="width:340px;flex:0 0 340px;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <h2>规则摘要</h2>
+      <div style="font-size:13px;line-height:2.1">
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">货位推荐组</span><b>60%</b></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">催取优先级组</span><b>40%</b></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">等级划分</span><b>优选 ≥85 / 可用 70-84 / 受限 &lt;70</b></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">缺失数据处理</span><b>该因素不参与，按剩余权重归一</b></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>模块效果（近 30 天）</h2>
+      <div class="donut-wrap"><div class="donut" style="background:conic-gradient(#0F3B5D 0.00deg 296.64deg,#2878B5 296.64deg 338.40deg,#9BAAB8 338.40deg 360.00deg)"><div class="mid"><div><b>82.4%</b><span>采纳率</span></div></div></div><div class="lg"><div><i style="background:#0F3B5D"></i>采纳<b>412</b></div><div><i style="background:#2878B5"></i>人工调整<b>58</b></div><div><i style="background:#9BAAB8"></i>拒绝<b>30</b></div></div></div>
+      <div style="font-size:12px;color:#5C6B78;margin-top:10px;line-height:1.9">
+        推荐采纳 412 次 / 人工调整 58 次 / 拒绝 30 次，采纳率 82.4%。
+      </div>
+    </div>
+    <div class="card">
+      <h2>试算</h2>
+      <div style="font-size:12px;color:#5C6B78;margin-bottom:8px">不落库，仅预览当前权重下的示例结果</div>
+      <select style="width:100%;margin-bottom:10px"><option>SF1234567890123（中件 · A 区）</option><option>JD0098765432101（小件 · B 区）</option></select>
+      <button class="btn ghost" style="width:100%">运行试算</button>
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

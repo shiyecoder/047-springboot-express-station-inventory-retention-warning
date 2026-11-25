@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>个人中心 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="on" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>个人中心</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>个人中心</h1><div class="sub" style="margin-bottom:0">修改资料、密码与头像，头像保存后右上角同步更新</div></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div class="card" style="width:300px;flex:0 0 300px;text-align:center">
+    <div class="avatar" style="width:76px;height:76px;font-size:28px;margin:6px auto 12px">周</div>
+    <div style="font-size:16px;font-weight:600">周敏</div>
+    <div style="font-size:12px;color:#5C6B78;margin-top:2px">站点负责人 · 南湖大学城站</div>
+    <button class="btn sm" style="margin-top:14px">更换头像</button>
+    <div style="border-top:1px solid #DCE5EC;margin-top:16px;padding-top:14px;font-size:13px;line-height:2.2;text-align:left">
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">账号</span><b>manager01</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">工号</span><b>ST1072</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">最后登录</span><b>2026-11-01 14:02</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">在职状态</span><b>正常</b></div>
+    </div>
+  </div>
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <h2>基本资料</h2>
+      <div class="fgrid">
+        <div class="it"><span>姓名</span><input value="周敏"></div>
+        <div class="it"><span>手机号</span><input value="13800910091"></div>
+        <div class="it"><span>邮箱</span><input value="zhoumin@yitong-express.cn"></div>
+        <div class="it"><span>所属站点</span><input value="南湖大学城站" readonly style="background:#F7FAFD"></div>
+      </div>
+      <div style="margin-top:14px"><button class="btn primary">保存资料</button></div>
+    </div>
+    <div class="card">
+      <h2>修改密码</h2>
+      <div class="fgrid">
+        <div class="it"><span>当前密码</span><input type="password" value="······"></div>
+        <div class="it"><span>新密码</span><input type="password" placeholder="8-20 位，含字母与数字"></div>
+        <div class="it"><span>确认新密码</span><input type="password"></div>
+      </div>
+      <div style="font-size:12px;color:#5C6B78;margin-top:10px">密码使用 BCrypt 保存，任何接口与日志均不返回密码字段；连续登录失败 5 次锁定 15 分钟。</div>
+      <div style="margin-top:14px"><button class="btn primary">更新密码</button></div>
+    </div>
+    <div class="card">
+      <h2>我的操作记录</h2>
+      <div class="tbl-wrap"><table><thead><tr><th>时间</th><th>操作</th><th>对象</th><th>结果</th></tr></thead><tbody><tr><td class="nowrap">2026-11-01 15:38</td><td>执行滞留风险计算</td><td>SF1234567890123</td><td><span class="tag t-green">成功</span></td></tr><tr><td class="nowrap">2026-11-01 14:20</td><td>确认批次交接</td><td>JB20261101-003</td><td><span class="tag t-green">成功</span></td></tr><tr><td class="nowrap">2026-11-01 11:08</td><td>调整推荐货位</td><td>ZTO7712345678901</td><td><span class="tag t-green">成功</span></td></tr><tr><td class="nowrap">2026-10-31 17:42</td><td>审核异常件</td><td>YC20261031-005</td><td><span class="tag t-red">驳回</span></td></tr></tbody></table></div>
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

@@ -1,0 +1,200 @@
+[
+  {
+    "f": "01_login.html",
+    "h": 900,
+    "w": 1440,
+    "title": "登录 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 305
+  },
+  {
+    "f": "02_dashboard.html",
+    "h": 900,
+    "w": 1440,
+    "title": "驿站运营看板 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 777
+  },
+  {
+    "f": "03_intake_desk.html",
+    "h": 900,
+    "w": 1440,
+    "title": "扫码入库台 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 1025
+  },
+  {
+    "f": "04_intake_new.html",
+    "h": 900,
+    "w": 1440,
+    "title": "单件快速入库 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 818
+  },
+  {
+    "f": "05_batch.html",
+    "h": 900,
+    "w": 1440,
+    "title": "批次交接 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 789
+  },
+  {
+    "f": "06_batch_detail.html",
+    "h": 900,
+    "w": 1440,
+    "title": "批次核对 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 836
+  },
+  {
+    "f": "07_shelf_map.html",
+    "h": 900,
+    "w": 1440,
+    "title": "货架可视图 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 1131
+  },
+  {
+    "f": "08_parcels.html",
+    "h": 900,
+    "w": 1440,
+    "title": "快件台账 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 1142
+  },
+  {
+    "f": "09_parcel_detail.html",
+    "h": 900,
+    "w": 1440,
+    "title": "快件详情 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 921
+  },
+  {
+    "f": "10_notify.html",
+    "h": 900,
+    "w": 1440,
+    "title": "取件通知 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 953
+  },
+  {
+    "f": "11_pickup.html",
+    "h": 900,
+    "w": 1440,
+    "title": "取件核验台 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 677
+  },
+  {
+    "f": "12_retention.html",
+    "h": 900,
+    "w": 1440,
+    "title": "滞留处理中心 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 1453
+  },
+  {
+    "f": "13_rule.html",
+    "h": 900,
+    "w": 1440,
+    "title": "规则与权重 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 1007
+  },
+  {
+    "f": "14_return.html",
+    "h": 900,
+    "w": 1440,
+    "title": "退件与交接 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 883
+  },
+  {
+    "f": "15_exception.html",
+    "h": 900,
+    "w": 1440,
+    "title": "异常件处理 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 964
+  },
+  {
+    "f": "16_stocktake.html",
+    "h": 900,
+    "w": 1440,
+    "title": "盘点任务 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 776
+  },
+  {
+    "f": "17_system.html",
+    "h": 900,
+    "w": 1440,
+    "title": "用户与角色 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 784
+  },
+  {
+    "f": "18_message.html",
+    "h": 900,
+    "w": 1440,
+    "title": "站内消息 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 590
+  },
+  {
+    "f": "19_profile.html",
+    "h": 900,
+    "w": 1440,
+    "title": "个人中心 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 596
+  },
+  {
+    "f": "20_portal.html",
+    "h": 900,
+    "w": 1440,
+    "title": "我的快件 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 566
+  },
+  {
+    "f": "21_courier.html",
+    "h": 900,
+    "w": 1440,
+    "title": "我的交接批次 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 602
+  },
+  {
+    "f": "22_mobile.html",
+    "h": 900,
+    "w": 1440,
+    "title": "移动端 · 驿通快递驿站",
+    "imgs": 0,
+    "broken": 0,
+    "text": 676
+  }
+]

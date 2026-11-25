@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>退件与交接 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="on" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>退件与交接</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>退件与交接</h1><div class="sub" style="margin-bottom:0">拒收、超期、地址错误等快件发起退件，负责人确认后与快递员核对交接</div></div>
+  <div class="acts"><button class="btn">导出退件单</button><button class="btn primary">发起退件申请</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">待负责人确认</div><div class="v" style="color:#2878B5">1</div></div>
+  <div><div class="k">待交接</div><div class="v" style="color:#8A6117">2</div></div>
+  <div><div class="k">本月已退回</div><div class="v">37</div></div>
+  <div><div class="k">退件率</div><div class="v">2.9%</div></div>
+</div>
+<div class="card" style="margin-bottom:14px">
+  <div class="toolbar" style="margin-bottom:0">
+    <input class="search" placeholder="退件单号 / 运单号">
+    <select style="width:190px"><option>全部快递公司</option><option>顺丰速运</option><option>中通快递</option></select>
+    <select style="width:180px"><option>全部原因</option><option>拒收</option><option>超期未取</option><option>地址错误</option><option>破损退件</option></select>
+    <select style="width:180px"><option>全部状态</option><option>待负责人确认</option><option>待交接</option><option>已交接</option></select>
+    <button class="btn primary">查询</button><button class="btn">重置</button>
+  </div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div class="card" style="flex:1;min-width:0">
+    <div class="tbl-wrap"><table><thead><tr><th>退件单号</th><th>运单号</th><th>收件人</th><th>退件原因</th><th>说明</th><th>状态</th><th>交接快递员</th><th>操作</th></tr></thead><tbody><tr><td class="nowrap">TJ20261101-006</td><td class="nowrap">SF1234567890191</td><td>孙婉婷</td><td>拒收</td><td>收件人当场拒收，要求原路退回</td><td><span class="tag t-amber">待交接</span></td><td>赵磊</td><td><a href="#">核对交接</a></td></tr><tr><td class="nowrap">TJ20261101-005</td><td class="nowrap">ZTO7712345699002</td><td>郑一鸣</td><td>超期未取</td><td>在库 12 天超自动退件阈值</td><td><span class="tag t-blue">待负责人确认</span></td><td>孙鹏</td><td><a href="#">审核</a></td></tr><tr><td class="nowrap">TJ20261031-004</td><td class="nowrap">YTO5566778899001</td><td>黄子豪</td><td>地址错误</td><td>面单地址缺失楼栋号，无法派送</td><td><span class="tag t-amber">待交接</span></td><td>范晓东</td><td><a href="#">核对交接</a></td></tr><tr><td class="nowrap">TJ20261031-003</td><td class="nowrap">JD0098765432566</td><td>何雨欣</td><td>收件人要求退回</td><td>电话确认真实意愿并留痕</td><td><span class="tag t-green">已交接</span></td><td>钱伟</td><td><a href="#">查看凭证</a></td></tr><tr><td class="nowrap">TJ20261030-002</td><td class="nowrap">JT9988776655999</td><td>马文博</td><td>破损退件</td><td>外包装破损已拍照，随件退回</td><td><span class="tag t-green">已交接</span></td><td>田甜</td><td><a href="#">查看凭证</a></td></tr></tbody></table></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;color:#5C6B78"><div>共 37 条 · 每页 <select style="width:78px;height:30px;display:inline-block"><option>10</option><option>20</option><option>50</option></select> 条</div><div style="display:flex;gap:6px;align-items:center"><button class="btn sm">上一页</button><span style="padding:0 6px">1 / 4</span><button class="btn sm">下一页</button></div></div>
+  </div>
+  <div class="card" style="width:330px;flex:0 0 330px">
+    <h2>交接核对（TJ20261101-006）</h2>
+    <div style="font-size:13px;line-height:2.1;margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">快递公司</span><b>顺丰速运</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">交接快递员</span><b>赵磊</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">应退件数</span><b>1 件</b></div>
+      <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">实收件数</span><b style="color:#1F7653">1 件</b></div>
+    </div>
+    <div style="font-size:12px;color:#5C6B78;margin-bottom:6px">交接凭证</div>
+    <div class="imgs"><div class="img-box">退件交接单</div><div class="upload">+ 拍照上传</div></div>
+    <div style="font-size:12px;color:#5C6B78;margin:12px 0 6px">接收人签字</div>
+    <input value="赵磊（顺丰速运）" style="width:100%;margin-bottom:10px">
+    <button class="btn primary" style="width:100%">确认交接完成</button>
+    <div style="font-size:12px;color:#5C6B78;margin-top:12px;line-height:1.9">
+      交接完成后快件状态变为「已退件」，属终态操作，修改需负责人审批并留痕。
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

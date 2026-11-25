@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>单件快速入库 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#17486C">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="on" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">配置</div>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>单件快速入库</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">林浩然<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">驿站员工</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>单件快速入库</h1><div class="sub" style="margin-bottom:0">登记后生成站内取件码，系统同时给出货位推荐</div></div>
+  <div class="acts"><a class="btn" href="03_intake_desk.html">返回入库台</a><button class="btn">保存草稿</button>
+  <button class="btn primary">提交入库</button></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div class="card" style="flex:1;min-width:0">
+    <h2>快件基础信息</h2>
+    <div class="fgrid">
+      <div class="it"><span>运单号 *</span><input value="SF1234567890155" placeholder="不超过 50 个字符"></div>
+      <div class="it"><span>快递公司 *</span><select><option>顺丰速运</option><option>京东物流</option><option>中通快递</option><option>圆通速递</option><option>韵达快递</option><option>极兔速递</option></select></div>
+      <div class="it"><span>收件人 *</span><input value="陈雨桐"></div>
+      <div class="it"><span>手机号 *</span><input value="13866210347"></div>
+      <div class="it"><span>件型 *</span><select><option>中件（30-60cm）</option><option>小件（≤30cm）</option><option>大件（>60cm）</option><option>异形件</option></select></div>
+      <div class="it"><span>到站时间 *</span><input value="2026-11-01 15:20"></div>
+      <div class="it"><span>交接批次</span><select><option>JB20261101-003 顺丰 · 赵磊</option><option>JB20261101-002 中通 · 孙鹏</option></select></div>
+      <div class="it"><span>特殊件标记</span><select><option>无</option><option>贵重件</option><option>生鲜冷藏</option><option>易碎品</option></select></div>
+      <div class="it full"><span>备注</span><textarea rows="2" placeholder="如：外包装轻微变形、需电话确认等">外包装完好，收件人要求放 3 号货架附近自取。</textarea></div>
+    </div>
+    <h2 style="margin-top:20px">货架与取件</h2>
+    <div class="fgrid">
+      <div class="it"><span>货架位置 *</span><select><option>A-03（A 区 · 小件 · 余 42 位）</option><option>A-07（余 18 位）</option><option>B-02（中件 · 余 26 位）</option></select></div>
+      <div class="it"><span>取件码</span><input value="483920" placeholder="留空由系统生成"></div>
+      <div class="it full"><span>包裹照片</span>
+        <div class="imgs">
+          <div class="img-box">包裹外观 01</div>
+          <div class="img-box">运单面单 02</div>
+          <div class="upload">+ 上传图片<br>≤5MB JPG/PNG</div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #DCE5EC;margin-top:18px;padding-top:14px;display:flex;gap:10px">
+      <button class="btn">取消</button><button class="btn ghost">保存草稿</button>
+      <button class="btn primary">提交并打印取件码</button>
+      <span style="font-size:12px;color:#5C6B78;align-self:center">关闭前若有未保存内容将提示确认</span>
+    </div>
+  </div>
+  <div class="card" style="width:340px;flex:0 0 340px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <h2 style="margin:0">货位推荐</h2><span class="tag t-blue">规则 v3 · 生效中</span>
+    </div>
+    <div style="font-size:12px;color:#5C6B78;margin-bottom:12px">依据件型、货架余量、快递公司分区、入库时长等 6 项因素计算</div>
+    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px">
+      <span style="font-size:32px;font-weight:600;color:#0F3B5D">A-03</span>
+      <span class="tag t-green">优选 88.5</span>
+    </div>
+    <table style="font-size:12px">
+      <thead><tr><th>因素</th><th class="num">权重</th><th class="num">得分</th><th class="num">加权</th></tr></thead>
+      <tbody>
+        <tr><td>包裹尺寸匹配</td><td class="num">20%</td><td class="num">95</td><td class="num">19.0</td></tr>
+        <tr><td>货架剩余容量</td><td class="num">25%</td><td class="num">86</td><td class="num">21.5</td></tr>
+        <tr><td>快递公司分区</td><td class="num">15%</td><td class="num">92</td><td class="num">13.8</td></tr>
+        <tr><td>入库时长</td><td class="num">25%</td><td class="num">100</td><td class="num">25.0</td></tr>
+        <tr><td>通知次数</td><td class="num">10%</td><td class="num">60</td><td class="num">6.0</td></tr>
+        <tr><td>特殊件标记</td><td class="num">5%</td><td class="num">64</td><td class="num">3.2</td></tr>
+      </tbody>
+    </table>
+    <div style="background:#F4F8FB;border:1px solid #DCE5EC;border-radius:6px;padding:10px 12px;font-size:12px;line-height:1.9;margin-top:12px">
+      <b>主要影响因素</b><br>件型与货架规格完全匹配；A 区剩余 42 位，容量充足。<br>
+      <b style="color:#8A6117">未满足条件</b><br>通知次数偏少（仅 0 次），建议上架后立即生成待通知。
+    </div>
+    <a class="btn sm" style="margin-top:12px;display:block;text-align:center" href="12_retention.html">查看完整计算留痕</a>
+  </div>
+</div></div>
+</div>
+</div></body></html>

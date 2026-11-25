@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>滞留处理中心 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="on" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>滞留处理中心</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>滞留处理中心</h1>
+    <div class="sub" style="margin-bottom:0">滞留风险与货架位置推荐 · 规则 v3（2026-10-20 生效）· 计算时间 2026-11-01 15:38:22</div></div>
+  <div class="acts"><select style="width:150px"><option>最近 30 天</option><option>本月</option></select>
+  <button class="btn">导出计算结果</button><button class="btn primary">重新计算</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">本次计算对象</div><div class="v" style="font-size:15px">SF1234567890123</div></div>
+  <div><div class="k">综合得分</div><div class="v" style="color:#0F3B5D">81.5</div></div>
+  <div><div class="k">结果等级</div><div class="v"><span class="tag t-green">优选货位 · 中优先级催取</span></div></div>
+  <div><div class="k">人工调整</div><div class="v" style="font-size:15px">未调整</div></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">计算明细（6 项因素 · 权重合计 100%）</h2>
+        <span style="font-size:12px;color:#5C6B78">输入快照已保存，同输入同版本必得同结果</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th>因素</th><th>输入值</th><th class="num">权重</th><th class="num">得分</th><th class="num">加权分</th><th>计算依据</th><th>评价</th></tr></thead><tbody><tr><td class="nowrap">包裹尺寸</td><td>中件 42×30×26cm</td><td class="num">20%</td><td class="num">95</td><td class="num">19.0</td><td>A 区货架层高与件型完全匹配，无须占用大件区</td><td><span class="tag t-green">达标</span></td></tr><tr><td class="nowrap">货架容量</td><td>A 区余 42 / 120 位</td><td class="num">25%</td><td class="num">86</td><td class="num">21.5</td><td>剩余 35% 容量，满足未来 3 天入库需求</td><td><span class="tag t-green">达标</span></td></tr><tr><td class="nowrap">快递公司分区</td><td>顺丰 · 分区 A</td><td class="num">15%</td><td class="num">92</td><td class="num">13.8</td><td>本站与顺丰约定 A 区集中上架，便于批量交接</td><td><span class="tag t-green">达标</span></td></tr><tr><td class="nowrap">入库时长</td><td>已入库 4 天 2 小时</td><td class="num">25%</td><td class="num">72</td><td class="num">18.0</td><td>处于「即将滞留」区间，需在 24 小时内完成二次通知</td><td><span class="tag t-amber">偏低</span></td></tr><tr><td class="nowrap">通知次数</td><td>已通知 2 次</td><td class="num">10%</td><td class="num">60</td><td class="num">6.0</td><td>通知 2 次仍未取件，催取优先级上调</td><td><span class="tag t-amber">偏低</span></td></tr><tr><td class="nowrap">特殊件标记</td><td>无特殊标记</td><td class="num">5%</td><td class="num">64</td><td class="num">3.2</td><td>普通件，按常规流程处理，不占用贵重件货位</td><td><span class="tag t-gray">偏低</span></td></tr></tbody></table></div>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:26px;padding:10px 14px;background:#F4F8FB;border-radius:6px;font-size:13px">
+        <span>加权合计 <b style="font-size:18px;color:#0F3B5D;font-variant-numeric:tabular-nums">81.5</b> / 100</span>
+        <span style="color:#5C6B78">货位推荐组 60% · 催取优先级组 40%</span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>推荐结果解释</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div style="border:1px solid #DCE5EC;border-radius:8px;padding:12px 14px">
+          <div style="font-size:12px;color:#5C6B78;margin-bottom:6px">推荐货架</div>
+          <div style="font-size:24px;font-weight:600;color:#0F3B5D">A-03</div>
+          <div style="font-size:12px;color:#5C6B78;margin-top:4px">备选 A-07（82.1）/ B-02（74.6）</div>
+        </div>
+        <div style="border:1px solid #DCE5EC;border-radius:8px;padding:12px 14px">
+          <div style="font-size:12px;color:#5C6B78;margin-bottom:6px">催取优先级</div>
+          <div style="font-size:24px;font-weight:600;color:#8A6117">中</div>
+          <div style="font-size:12px;color:#5C6B78;margin-top:4px">建议 24 小时内完成二次通知</div>
+        </div>
+        <div style="border:1px solid #DCE5EC;border-radius:8px;padding:12px 14px">
+          <div style="font-size:12px;color:#5C6B78;margin-bottom:6px">预计可释放</div>
+          <div style="font-size:24px;font-weight:600;color:#1F7653">1 位</div>
+          <div style="font-size:12px;color:#5C6B78;margin-top:4px">取件后 A 区占用率降至 34%</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:6px">主要影响因素</div>
+          <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.9;color:#3C4A57">
+            <li>件型与 A 区层高、深度完全匹配，空间利用率最高</li>
+            <li>A 区剩余容量充足，可按快递公司分区规则集中上架</li>
+            <li>已入库 4 天，进入「即将滞留」区间，催取权重上升</li>
+          </ul>
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:6px;color:#8A6117">未满足条件</div>
+          <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.9;color:#3C4A57">
+            <li>未标记特殊件，若为贵重件应改配 D 区（贵重件得分 71.2）</li>
+            <li>通知 2 次仍未取件，未达「通知 3 次」的强催取条件</li>
+          </ul>
+          <div style="font-size:13px;font-weight:600;margin:12px 0 6px;color:#1F7653">可改进项</div>
+          <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.9;color:#3C4A57">
+            <li>录入收件人常用取件时段，可提前安排高峰人员</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">人工修正记录</h2><span style="font-size:12px;color:#5C6B78">原始计算结果不覆盖，修正需填写原因（≥5 字）</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th>调整时间</th><th>调整人</th><th>原结果</th><th>调整为</th><th>原因</th></tr></thead><tbody><tr><td>2026-10-30 16:20</td><td>周敏</td><td>A-03 / 低优先级</td><td>A-03 / 中优先级</td><td>收件人电话无人接听，且为开学季学生件，需尽快催取</td></tr><tr><td>—</td><td>—</td><td>—</td><td>—</td><td>暂无其他调整</td></tr></tbody></table></div>
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+        <select style="width:220px"><option>调整推荐货架为 D-01</option><option>提升催取优先级为「高」</option><option>标记为特殊件</option></select>
+        <input placeholder="填写调整原因（不少于 5 个字）" style="flex:1">
+        <button class="btn ghost">提交人工调整</button>
+      </div>
+    </div>
+  </div>
+  <div style="width:330px;flex:0 0 330px;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <h2>在库快件概况</h2>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px 20px"><div><span style="color:#5C6B78;font-size:13px">运单号</span><div style="font-size:13px;margin-top:3px">SF1234567890123</div></div><div><span style="color:#5C6B78;font-size:13px">收件人</span><div style="font-size:13px;margin-top:3px">陈雨桐</div></div><div><span style="color:#5C6B78;font-size:13px">货架</span><div style="font-size:13px;margin-top:3px">A-03</div></div><div><span style="color:#5C6B78;font-size:13px">入库时间</span><div style="font-size:13px;margin-top:3px">2026-10-28 14:22</div></div><div><span style="color:#5C6B78;font-size:13px">在库</span><div style="font-size:13px;margin-top:3px">4 天 2 小时</div></div><div><span style="color:#5C6B78;font-size:13px">通知次数</span><div style="font-size:13px;margin-top:3px">2 次</div></div></div>
+    </div>
+    <div class="card">
+      <h2>滞留分级（本站配置）</h2>
+      <div style="font-size:13px;line-height:2">
+        <div style="display:flex;justify-content:space-between"><span>正常</span><span>≤ 3 天 · <b>742 件</b></span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#8A6117">即将滞留</span><span>4-5 天 · <b>435 件</b></span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#B22B31">已滞留</span><span>6-9 天 · <b>87 件</b></span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#B22B31">待退回</span><span>≥ 10 天 · <b>0 件</b></span></div>
+      </div>
+      <div class="meter" style="margin-top:10px"><i class="warn" style="width:41%"></i></div>
+      <a class="btn sm" style="display:block;text-align:center;margin-top:12px" href="13_rule.html">调整阈值与权重</a>
+    </div>
+    <div class="card">
+      <h2>模块效果（近 30 天）</h2>
+      <div style="font-size:13px;line-height:2.1">
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">推荐采纳率</span><b>82.4%</b></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">人工调整率</span><b>11.7%</b></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:#5C6B78">调整后滞留下降</span><b style="color:#1F7653">-19.3%</b></div>
+      </div>
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

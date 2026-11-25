@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>货架可视图 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#17486C">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="on" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">配置</div>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>货架可视图</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">林浩然<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">驿站员工</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>货架可视图</h1><div class="sub" style="margin-bottom:0">南湖大学城站 · 4 个区域 18 个货架 · 总容量 1,648 位</div></div>
+  <div class="acts"><button class="btn">货架档案</button><button class="btn">批量移库</button>
+  <button class="btn primary">新增货架</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">总容量</div><div class="v">1,648 位</div></div>
+  <div><div class="k">已占用</div><div class="v">1,264 位</div></div>
+  <div><div class="k">整体占用率</div><div class="v" style="color:#2878B5">77%</div></div>
+  <div><div class="k">满载 / 停用</div><div class="v"><span style="color:#B22B31">2</span> / <span style="color:#5C6B78">1</span></div></div>
+</div>
+<div class="card" style="margin-bottom:14px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+    <h2 style="margin:0">货架分布</h2>
+    <div style="display:flex;gap:14px;font-size:12px;color:#5C6B78">
+      <span><i style="display:inline-block;width:9px;height:9px;background:#2878B5;border-radius:2px;margin-right:5px"></i>可用</span>
+      <span><i style="display:inline-block;width:9px;height:9px;background:#C98A1E;border-radius:2px;margin-right:5px"></i>接近满载</span>
+      <span><i style="display:inline-block;width:9px;height:9px;background:#B22B31;border-radius:2px;margin-right:5px"></i>已满载</span>
+    </div>
+  </div>
+  <div class="shelf-grid"><div class="shelf"><div class="hd"><span class="cd">A-01</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:98%"></i></div><div class="meta"><span>118 / 120 位</span><span>98%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-02</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:87%"></i></div><div class="meta"><span>104 / 120 位</span><span>87%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-03</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:65%"></i></div><div class="meta"><span>78 / 120 位</span><span>65%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-04</span><span class="tag t-red">已满载</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="full" style="width:100%"></i></div><div class="meta"><span>120 / 120 位</span><span>100%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-05</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:80%"></i></div><div class="meta"><span>96 / 120 位</span><span>80%</span></div></div><div class="shelf off"><div class="hd"><span class="cd">A-06</span><span class="tag t-gray">停用维保</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:0%"></i></div><div class="meta"><span>0 / 120 位</span><span>0%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-07</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="" style="width:85%"></i></div><div class="meta"><span>102 / 120 位</span><span>85%</span></div></div><div class="shelf"><div class="hd"><span class="cd">A-08</span><span class="tag t-amber">接近满载</span></div><div style="font-size:12px;color:#5C6B78">A 区 · 小件</div><div class="meter"><i class="warn" style="width:95%"></i></div><div class="meta"><span>114 / 120 位</span><span>95%</span></div></div><div class="shelf"><div class="hd"><span class="cd">B-01</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">B 区 · 中件</div><div class="meter"><i class="" style="width:78%"></i></div><div class="meta"><span>62 / 80 位</span><span>78%</span></div></div><div class="shelf"><div class="hd"><span class="cd">B-02</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">B 区 · 中件</div><div class="meter"><i class="" style="width:68%"></i></div><div class="meta"><span>54 / 80 位</span><span>68%</span></div></div><div class="shelf"><div class="hd"><span class="cd">B-03</span><span class="tag t-amber">接近满载</span></div><div style="font-size:12px;color:#5C6B78">B 区 · 中件</div><div class="meter"><i class="warn" style="width:99%"></i></div><div class="meta"><span>79 / 80 位</span><span>99%</span></div></div><div class="shelf"><div class="hd"><span class="cd">B-04</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">B 区 · 中件</div><div class="meter"><i class="" style="width:55%"></i></div><div class="meta"><span>44 / 80 位</span><span>55%</span></div></div><div class="shelf"><div class="hd"><span class="cd">C-01</span><span class="tag t-amber">接近满载</span></div><div style="font-size:12px;color:#5C6B78">C 区 · 大件</div><div class="meter"><i class="warn" style="width:90%"></i></div><div class="meta"><span>36 / 40 位</span><span>90%</span></div></div><div class="shelf"><div class="hd"><span class="cd">C-02</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">C 区 · 大件</div><div class="meter"><i class="" style="width:52%"></i></div><div class="meta"><span>21 / 40 位</span><span>52%</span></div></div><div class="shelf"><div class="hd"><span class="cd">C-03</span><span class="tag t-red">已满载</span></div><div style="font-size:12px;color:#5C6B78">C 区 · 大件</div><div class="meter"><i class="full" style="width:100%"></i></div><div class="meta"><span>40 / 40 位</span><span>100%</span></div></div><div class="shelf"><div class="hd"><span class="cd">C-04</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">C 区 · 大件</div><div class="meter"><i class="" style="width:45%"></i></div><div class="meta"><span>18 / 40 位</span><span>45%</span></div></div><div class="shelf"><div class="hd"><span class="cd">D-01</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">D 区 · 异形贵重</div><div class="meter"><i class="" style="width:38%"></i></div><div class="meta"><span>9 / 24 位</span><span>38%</span></div></div><div class="shelf"><div class="hd"><span class="cd">D-02</span><span class="tag t-green">可用</span></div><div style="font-size:12px;color:#5C6B78">D 区 · 异形贵重</div><div class="meter"><i class="" style="width:58%"></i></div><div class="meta"><span>14 / 24 位</span><span>58%</span></div></div></div>
+</div>
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <h2 style="margin:0">容量异常待办</h2><span style="font-size:12px;color:#5C6B78">按优先级排序，处理完成后自动归档</span>
+  </div>
+  <div class="tbl-wrap"><table><thead><tr><th>任务号</th><th>类型</th><th>件型</th><th>说明</th><th>状态</th><th>负责人</th></tr></thead><tbody><tr><td class="nowrap">TK20261101-07</td><td>A-04 满载复核</td><td>小件</td><td>满载后仍有 6 件待分配</td><td><span class="tag t-amber">待处理</span></td><td>林浩然</td></tr><tr><td class="nowrap">TK20261101-06</td><td>C-03 满载复核</td><td>大件</td><td>大件区仅 C-02 余 19 位</td><td><span class="tag t-amber">待处理</span></td><td>吴晓丹</td></tr><tr><td class="nowrap">TK20261101-05</td><td>A-06 维保转可用</td><td>小件</td><td>层板更换完成待验收</td><td><span class="tag t-blue">处理中</span></td><td>郑凯</td></tr><tr><td class="nowrap">TK20261101-04</td><td>B-03 容量预警</td><td>中件</td><td>余 1 位，建议提前分流至 B-04</td><td><span class="tag t-gray">已阅读</span></td><td>林浩然</td></tr></tbody></table></div>
+</div></div>
+</div>
+</div></body></html>

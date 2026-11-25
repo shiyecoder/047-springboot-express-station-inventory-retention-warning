@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>异常件处理 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#17486C">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="on" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">配置</div>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>异常件处理</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">林浩然<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">驿站员工</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>异常件处理</h1><div class="sub" style="margin-bottom:0">破损、渗漏、错件、丢失、信息不符与疑似重复件，全链路留痕</div></div>
+  <div class="acts"><button class="btn">异常类型统计</button><button class="btn primary">登记异常件</button></div>
+</div>
+<div class="summary">
+  <div><div class="k">待处理</div><div class="v" style="color:#8A6117">3</div></div>
+  <div><div class="k">待负责人审核</div><div class="v" style="color:#B22B31">1</div></div>
+  <div><div class="k">本月已关闭</div><div class="v">24</div></div>
+  <div><div class="k">丢失件（本月）</div><div class="v">1</div></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">异常件列表</h2><span style="font-size:12px;color:#5C6B78">丢失与重大破损须负责人审核关闭</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th>异常单号</th><th>运单号</th><th>异常类型</th><th>发现环节</th><th>状态</th><th>责任方</th><th>登记人</th><th>操作</th></tr></thead><tbody><tr><td class="nowrap">YC20261101-003</td><td class="nowrap">SF1234567890184</td><td>外包装破损</td><td>入库扫描</td><td><span class="tag t-amber">待处理</span></td><td>顺丰速运</td><td>林浩然</td><td><a href="#">处理</a></td></tr><tr><td class="nowrap">YC20261101-002</td><td class="nowrap">JT9988776655443</td><td>疑似重复件</td><td>上架核对</td><td><span class="tag t-blue">处理中</span></td><td>极兔速递</td><td>吴晓丹</td><td><a href="#">处理</a></td></tr><tr><td class="nowrap">YC20261101-001</td><td class="nowrap">ZTO7712345677888</td><td>信息不符</td><td>入库扫描</td><td><span class="tag t-red">待负责人审核</span></td><td>中通快递</td><td>郑凯</td><td><a href="#">审核</a></td></tr><tr><td class="nowrap">YC20261031-006</td><td class="nowrap">YD3322110011223</td><td>渗漏</td><td>上架核对</td><td><span class="tag t-green">已关闭</span></td><td>韵达快递</td><td>何静</td><td><a href="#">查看</a></td></tr><tr><td class="nowrap">YC20261030-004</td><td class="nowrap">JD0098765432999</td><td>丢失</td><td>在库盘点</td><td><span class="tag t-green">已关闭</span></td><td>京东物流</td><td>周敏</td><td><a href="#">查看</a></td></tr></tbody></table></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;color:#5C6B78"><div>共 28 条 · 每页 <select style="width:78px;height:30px;display:inline-block"><option>10</option><option>20</option><option>50</option></select> 条</div><div style="display:flex;gap:6px;align-items:center"><button class="btn sm">上一页</button><span style="padding:0 6px">1 / 3</span><button class="btn sm">下一页</button></div></div>
+    </div>
+    <div class="card">
+      <h2>处理链路 · YC20261101-003</h2>
+      <div class="timeline">
+        <div class="ev warn"><div class="h">登记异常 · 外包装破损</div>
+          <div class="d">2026-11-01 14:25 · 发现环节：入库扫描 · 责任方：快递公司 · 林浩然</div></div>
+        <div class="ev ok"><div class="h">现场拍照留证 · 2 张</div>
+          <div class="d">2026-11-01 14:26 · 破损位置：右侧面，内件未暴露</div></div>
+        <div class="ev"><div class="h">联系收件人确认 · 待处理</div>
+          <div class="d">收件人陈雨桐，电话 138****6621，已通知到站验货</div></div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:6px">
+        <button class="btn">补充照片</button><button class="btn ghost">转负责人审核</button>
+        <button class="btn primary">填写处理结果并关闭</button>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width:330px;flex:0 0 330px">
+    <h2>登记异常件</h2>
+    <div class="fgrid" style="grid-template-columns:1fr">
+      <div class="it"><span>运单号 *</span><input value=""></div>
+      <div class="it"><span>异常类型 *</span><select><option>外包装破损</option><option>内件破损</option><option>渗漏</option><option>错件</option><option>丢失</option><option>信息不符</option><option>疑似重复件</option></select></div>
+      <div class="it"><span>发现环节 *</span><select><option>入库扫描</option><option>上架核对</option><option>取件核验</option><option>在库盘点</option></select></div>
+      <div class="it"><span>责任方 *</span><select><option>快递公司</option><option>驿站</option><option>收件人</option><option>待认定</option></select></div>
+      <div class="it"><span>现场照片 *</span>
+        <div class="imgs"><div class="upload">+ 上传<br>≤5MB</div></div>
+      </div>
+      <div class="it"><span>情况说明 *</span><textarea rows="3" placeholder="不少于 10 个字"></textarea></div>
+    </div>
+    <button class="btn primary" style="width:100%;margin-top:12px">提交登记</button>
+  </div>
+</div></div>
+</div>
+</div></body></html>

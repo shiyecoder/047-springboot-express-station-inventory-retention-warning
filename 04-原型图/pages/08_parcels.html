@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>快件台账 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="on" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>快件台账</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>快件台账</h1><div class="sub" style="margin-bottom:0">站内全部快件流转记录 · 运单号在同一站点内唯一</div></div>
+  <div class="acts"><button class="btn">导出当前筛选</button><button class="btn" href="16_stocktake.html">盘点</button>
+  <a class="btn primary" href="03_intake_desk.html">扫码入库</a></div>
+</div>
+<div class="card" style="margin-bottom:14px">
+  <div class="toolbar">
+    <input class="search" placeholder="运单号 / 收件人">
+    <select style="width:190px"><option>全部快递公司</option><option>顺丰速运</option><option>京东物流</option><option>中通快递</option><option>圆通速递</option><option>韵达快递</option><option>极兔速递</option></select>
+    <select style="width:180px"><option>全部货架</option><option>A 区</option><option>B 区</option><option>C 区</option><option>D 区</option></select>
+    <select style="width:180px"><option>全部状态</option><option>待上架</option><option>在库</option><option>已通知</option><option>已取件</option><option>待退回</option><option>异常件</option></select>
+    <input value="2026-10-01" style="width:150px"><span style="color:#5C6B78">至</span><input value="2026-11-01" style="width:150px">
+    <button class="btn primary">查询</button><button class="btn">重置</button>
+  </div>
+  <div class="tabs" style="margin-bottom:0">
+    <a class="on" href="#">全部<span class="c">1,264</span></a><a href="#">待上架<span class="c">14</span></a>
+    <a href="#">在库<span class="c">1,082</span></a><a href="#">已通知<span class="c">168</span></a>
+    <a href="#">异常<span class="c">6</span></a><a href="#">今日已取<span class="c">386</span></a>
+  </div>
+</div>
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <h2 style="margin:0">快件列表</h2>
+    <div style="display:flex;gap:8px"><button class="btn sm">批量通知</button><button class="btn sm">批量移库</button>
+      <button class="btn sm danger">批量退件</button></div>
+  </div>
+  <div class="tbl-wrap"><table><thead><tr><th>运单号</th><th>快递公司</th><th>收件人</th><th>手机号</th><th>货架</th><th>入库时间</th><th class="num">滞留天数</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td class="nowrap">SF1234567890123</td><td>顺丰速运</td><td>陈雨桐</td><td>尾号 6621</td><td><span class="tag t-blue">A-03</span></td><td class="nowrap">2026-10-28 14:22</td><td class="num">4 天</td><td><span class="tag t-blue">在库</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">JD0098765432101</td><td>京东物流</td><td>王思远</td><td>尾号 3308</td><td><span class="tag t-blue">B-02</span></td><td class="nowrap">2026-10-25 09:36</td><td class="num">7 天</td><td><span class="tag t-red">已滞留</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">ZTO7712345678901</td><td>中通快递</td><td>李佳怡</td><td>尾号 7712</td><td><span class="tag t-blue">C-01</span></td><td class="nowrap">2026-10-31 11:08</td><td class="num">1 天</td><td><span class="tag t-blue">在库</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">YTO5566778899001</td><td>圆通速递</td><td>黄子豪</td><td>尾号 2045</td><td><span class="tag t-blue">A-05</span></td><td class="nowrap">2026-10-24 16:40</td><td class="num">8 天</td><td><span class="tag t-amber">即将退回</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">YD3322110099887</td><td>韵达快递</td><td>周晓彤</td><td>尾号 8834</td><td><span class="tag t-blue">B-04</span></td><td class="nowrap">2026-10-30 10:15</td><td class="num">2 天</td><td><span class="tag t-blue">已通知</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">JT9988776655443</td><td>极兔速递</td><td>刘子轩</td><td>尾号 1129</td><td><span class="tag t-blue">D-01</span></td><td class="nowrap">2026-10-26 15:02</td><td class="num">6 天</td><td><span class="tag t-red">异常件</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">SF1234567890210</td><td>顺丰速运</td><td>孙婉婷</td><td>尾号 5560</td><td><span class="tag t-blue">A-07</span></td><td class="nowrap">2026-11-01 14:26</td><td class="num">0 天</td><td><span class="tag t-amber">待上架</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">ZTO7712345699002</td><td>中通快递</td><td>郑一鸣</td><td>尾号 9931</td><td><span class="tag t-blue">A-01</span></td><td class="nowrap">2026-10-20 09:12</td><td class="num">12 天</td><td><span class="tag t-red">待退回</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">JD0098765432288</td><td>京东物流</td><td>何雨欣</td><td>尾号 4477</td><td><span class="tag t-blue">B-01</span></td><td class="nowrap">2026-10-29 13:50</td><td class="num">3 天</td><td><span class="tag t-green">已取件</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr><tr><td class="nowrap">YTO5566778900112</td><td>圆通速递</td><td>马文博</td><td>尾号 6612</td><td><span class="tag t-blue">C-02</span></td><td class="nowrap">2026-10-27 18:20</td><td class="num">5 天</td><td><span class="tag t-amber">即将滞留</span></td><td><a href="09_parcel_detail.html">详情</a></td></tr></tbody></table></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;color:#5C6B78"><div>共 1,264 条 · 每页 <select style="width:78px;height:30px;display:inline-block"><option>10</option><option>20</option><option>50</option></select> 条</div><div style="display:flex;gap:6px;align-items:center"><button class="btn sm">上一页</button><span style="padding:0 6px">1 / 127</span><button class="btn sm">下一页</button></div></div>
+</div></div>
+</div>
+</div></body></html>

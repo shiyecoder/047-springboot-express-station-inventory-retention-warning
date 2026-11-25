@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>取件核验台 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#17486C">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="on" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">配置</div>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>取件核验台</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">林浩然<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">驿站员工</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>取件核验台</h1><div class="sub" style="margin-bottom:0">支持运单号、手机号后四位、取件码三种查询方式</div></div>
+  <div class="acts"><button class="btn">今日取件记录</button><button class="btn primary">确认出库</button></div>
+</div>
+<div class="row" style="gap:14px;align-items:flex-start">
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <div style="display:flex;gap:10px;align-items:center">
+        <input class="search" style="width:340px;height:40px" value="13866210347" placeholder="运单号 / 手机号后四位 / 取件码">
+        <button class="btn primary" style="height:40px">查询待取件</button>
+        <span style="font-size:12px;color:#5C6B78">查到 2 件该收件人的在库快件</span>
+      </div>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h2 style="margin:0">待取快件（一次取出多件，逐件确认）</h2>
+        <span class="tag t-blue">已选 2 件</span>
+      </div>
+      <div class="tbl-wrap"><table><thead><tr><th></th><th>运单号</th><th>件型</th><th>货架</th><th>取件码</th><th class="num">在库天数</th></tr></thead><tbody><tr><td><input type="checkbox" checked style="height:auto;width:auto"></td><td class="nowrap">SF1234567890123</td><td>中件</td><td><span class="tag t-blue">A-03</span></td><td>483920</td><td class="num">4 天</td></tr><tr><td><input type="checkbox" checked style="height:auto;width:auto"></td><td class="nowrap">SF1234567890140</td><td>小件</td><td><span class="tag t-blue">A-07</span></td><td>771204</td><td class="num">4 天</td></tr><tr><td><input type="checkbox" style="height:auto;width:auto"></td><td class="nowrap">JD0098765432288</td><td>小件</td><td><span class="tag t-blue">B-01</span></td><td>205513</td><td class="num">3 天</td></tr></tbody></table></div>
+      <div style="margin-top:14px;background:#F4F8FB;border:1px solid #DCE5EC;border-radius:6px;padding:12px 14px;
+                  display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:13px">本次核验件数 <b style="font-size:18px;color:#0F3B5D">2</b> 件，逐件勾选后统一出库</span>
+        <span style="font-size:12px;color:#5C6B78">出库后状态变更为「已取件」，不可直接修改</span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>核验信息</h2>
+      <div class="fgrid">
+        <div class="it"><span>取件方式 *</span><select><option>本人取件</option><option>代取（需登记授权）</option></select></div>
+        <div class="it"><span>核验方式 *</span><select><option>取件码核验</option><option>手机号后四位 + 姓名</option><option>身份证核验</option></select></div>
+        <div class="it"><span>收件人姓名</span><input value="陈雨桐"></div>
+        <div class="it"><span>取件人手机号</span><input value="138****6621"></div>
+        <div class="it full"><span>经办员工</span><input value="林浩然" readonly style="background:#F7FAFD"></div>
+      </div>
+      <div style="border-top:1px solid #DCE5EC;margin-top:16px;padding-top:14px;display:flex;gap:10px">
+        <button class="btn">取消</button><button class="btn ghost">保存为待办</button>
+        <button class="btn primary">确认出库（2 件）</button>
+      </div>
+    </div>
+  </div>
+  <div style="width:330px;flex:0 0 330px;display:flex;flex-direction:column;gap:14px">
+    <div class="card">
+      <h2>收件人概况</h2>
+      <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:12px 20px"><div><span style="color:#5C6B78;font-size:13px">收件人</span><div style="font-size:13px;margin-top:3px">陈雨桐</div></div><div><span style="color:#5C6B78;font-size:13px">手机号</span><div style="font-size:13px;margin-top:3px">138****6621</div></div><div><span style="color:#5C6B78;font-size:13px">本站在库</span><div style="font-size:13px;margin-top:3px">2 件</div></div><div><span style="color:#5C6B78;font-size:13px">历史取件</span><div style="font-size:13px;margin-top:3px">18 次</div></div><div><span style="color:#5C6B78;font-size:13px">平均在库</span><div style="font-size:13px;margin-top:3px">2.4 天</div></div></div>
+    </div>
+    <div class="card">
+      <h2>代取授权</h2>
+      <div style="font-size:12px;color:#5C6B78;line-height:1.9;margin-bottom:10px">
+        代取需填写代取人姓名、手机号与授权方式；授权凭证可拍照上传，无凭证时代取人须出示取件码。
+      </div>
+      <a class="btn sm" style="display:block;text-align:center" href="#">登记代取授权</a>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid #DCE5EC;font-size:12px;color:#5C6B78">
+        近 30 天本站代取 68 次，占比 17.6%
+      </div>
+    </div>
+  </div>
+</div></div>
+</div>
+</div></body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>驿站运营看板 · 驿通快递驿站</title>
+<link rel="stylesheet" href="../mock.css">
+<style>.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;grid-auto-rows:262px}
+.dash .card{display:flex;flex-direction:column;padding:14px 16px;overflow:hidden}
+.dash .cb{flex:1;min-height:0;overflow:hidden}</style></head>
+<body><div class="shell">
+<aside class="side" style="background:#0F3B5D">
+  <div class="brand"><span class="mark">驿</span>驿通快递驿站</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="on" href="02_dashboard.html">驿站运营看板</a>
+<div class="group">入库作业</div>
+<a class="" href="03_intake_desk.html">扫码入库台<span class="badge">12</span></a>
+<a class="" href="04_intake_new.html">单件快速入库</a>
+<a class="" href="05_batch.html">批次交接<span class="badge">2</span></a>
+<a class="" href="06_batch_detail.html">批次核对</a>
+<div class="group">库存管理</div>
+<a class="" href="07_shelf_map.html">货架可视图</a>
+<a class="" href="08_parcels.html">快件台账</a>
+<a class="" href="16_stocktake.html">盘点任务<span class="badge">1</span></a>
+<div class="group">取件服务</div>
+<a class="" href="10_notify.html">取件通知<span class="badge">9</span></a>
+<a class="" href="11_pickup.html">取件核验台</a>
+<div class="group">异常与退件</div>
+<a class="" href="12_retention.html">滞留处理中心<span class="badge">87</span></a>
+<a class="" href="14_return.html">退件与交接<span class="badge">4</span></a>
+<a class="" href="15_exception.html">异常件处理<span class="badge">6</span></a>
+<div class="group">站点配置</div>
+<a class="" href="13_rule.html">规则与权重</a>
+<a class="" href="17_system.html">用户与角色</a>
+<a class="" href="18_message.html">站内消息<span class="badge">3</span></a>
+<a class="" href="19_profile.html">个人中心</a>
+</nav>
+  <div style="padding:10px 18px 0;font-size:11px;color:#7E93A6;line-height:1.7;border-top:1px solid rgba(255,255,255,.1);margin-top:8px">
+    南湖大学城站 · 在库 1,264 件
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>驿站运营看板</b></div>
+    <div class="spacer"></div>
+    <div class="crumb">南湖大学城站</div>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><path d="M6.5 10a5.5 5.5 0 0111 0c0 3.4.8 5 1.6 6H4.9c.8-1 1.6-2.6 1.6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19a2 2 0 004 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <div class="avatar">周</div>
+    <div style="font-size:13px">周敏<span style="color:#5C6B78;font-size:12px;display:block;line-height:1.2">站点负责人</span></div>
+  </header>
+  <div class="content"><div class="page-head">
+  <div><h1>驿站运营看板</h1><div class="sub" style="margin-bottom:0">南湖大学城站 · 2026-11-01 15:42 更新 · 数据范围：全站</div></div>
+  <div class="acts">
+    <select style="width:150px"><option>最近 30 天</option><option>本月</option><option>本季度</option><option>自定义</option></select>
+    <button class="btn">导出报表</button>
+    <button class="btn primary">扫码入库</button>
+  </div>
+</div>
+<div class="kpis"><div class="kpi"><div class="label">今日入库</div><div class="value">428<small>件</small></div><div class="delta">+12.4% 环比昨日</div></div><div class="kpi"><div class="label">今日出库</div><div class="value">386<small>件</small></div><div class="delta">+8.1% 环比昨日</div></div><div class="kpi"><div class="label">当前在库</div><div class="value">1,264<small>件</small></div><div class="delta">货架容量 1,648</div></div><div class="kpi"><div class="label">滞留件</div><div class="value">87<small>件</small></div><div class="delta down">+9 件 较昨日</div></div><div class="kpi"><div class="label">异常件</div><div class="value">6<small>件</small></div><div class="delta down">3 件待负责人审核</div></div><div class="kpi"><div class="label">货架占用率</div><div class="value">77<small>%</small></div><div class="delta">满载货架 4 个</div></div></div>
+<div class="dash"><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">日入出库趋势</h2><div style="font-size:12px;color:#5C6B78">近 14 天 · 件</div></div><div class="cb"><svg class="chart-line" viewBox="0 0 340 168" preserveAspectRatio="none"><line x1="34" y1="12.0" x2="332" y2="12.0" stroke="#EDF3F8"/><text x="29" y="15.0" font-size="10" fill="#8A98A5" text-anchor="end">562</text><line x1="34" y1="57.3" x2="332" y2="57.3" stroke="#EDF3F8"/><text x="29" y="60.3" font-size="10" fill="#8A98A5" text-anchor="end">475</text><line x1="34" y1="102.7" x2="332" y2="102.7" stroke="#EDF3F8"/><text x="29" y="105.7" font-size="10" fill="#8A98A5" text-anchor="end">388</text><line x1="34" y1="148.0" x2="332" y2="148.0" stroke="#EDF3F8"/><text x="29" y="151.0" font-size="10" fill="#8A98A5" text-anchor="end">301</text><polyline points="34.0,90.5 76.6,76.9 119.1,115.0 161.7,59.7 204.3,43.5 246.9,102.5 289.4,68.0 332.0,82.1" fill="none" stroke="#0F3B5D" stroke-width="2" stroke-linejoin="round"/><circle cx="332.0" cy="82.1" r="3" fill="#0F3B5D"/><polyline points="34.0,103.0 76.6,95.7 119.1,122.3 161.7,71.1 204.3,56.0 246.9,114.5 289.4,80.5 332.0,104.1" fill="none" stroke="#2878B5" stroke-width="2" stroke-linejoin="round"/><circle cx="332.0" cy="104.1" r="3" fill="#2878B5"/><text x="34.0" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-19</text><text x="76.6" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-21</text><text x="119.1" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-23</text><text x="161.7" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-25</text><text x="204.3" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-27</text><text x="246.9" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-29</text><text x="289.4" y="163" font-size="10" fill="#8A98A5" text-anchor="middle">10-31</text><text x="332.0" y="163" font-size="10" fill="#8A98A5" text-anchor="end">11-01</text></svg><div class="chart-x"><span>10-19</span><span>10-25</span><span>11-01</span></div></div></div><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">快递公司件量</h2><div style="font-size:12px;color:#5C6B78">本月占比</div></div><div class="cb"><div class="hbar"><div class="n">中通快递</div><div class="t"><i style="width:100.0%;background:#2878B5"></i></div><div class="v">386</div></div><div class="hbar"><div class="n">圆通速递</div><div class="t"><i style="width:80.8%;background:#2878B5"></i></div><div class="v">312</div></div><div class="hbar"><div class="n">顺丰速运</div><div class="t"><i style="width:68.4%;background:#2878B5"></i></div><div class="v">264</div></div><div class="hbar"><div class="n">韵达快递</div><div class="t"><i style="width:53.9%;background:#2878B5"></i></div><div class="v">208</div></div><div class="hbar"><div class="n">极兔速递</div><div class="t"><i style="width:45.6%;background:#2878B5"></i></div><div class="v">176</div></div><div class="hbar"><div class="n">京东物流</div><div class="t"><i style="width:36.8%;background:#2878B5"></i></div><div class="v">142</div></div></div></div><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">在库时长分布</h2><div style="font-size:12px;color:#5C6B78">按当前在库 1,264 件</div></div><div class="cb"><div class="vbars"><div><div class="num">742</div><div class="b" style="height:82.0%"></div><div class="lb">≤3天</div></div><div><div class="num">435</div><div class="b" style="height:48.1%"></div><div class="lb">4-5天</div></div><div><div class="num">87</div><div class="b alt" style="height:9.6%"></div><div class="lb">6-9天</div></div><div><div class="num">0</div><div class="b" style="height:3.3%"></div><div class="lb">≥10天</div></div></div></div></div><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">时段取件量</h2><div style="font-size:12px;color:#5C6B78">今日 386 件</div></div><div class="cb"><div class="vbars"><div><div class="num">46</div><div class="b" style="height:39.3%"></div><div class="lb">09-11</div></div><div><div class="num">88</div><div class="b" style="height:75.2%"></div><div class="lb">11-13</div></div><div><div class="num">62</div><div class="b" style="height:53.0%"></div><div class="lb">13-15</div></div><div><div class="num">74</div><div class="b" style="height:63.2%"></div><div class="lb">15-17</div></div><div><div class="num">96</div><div class="b alt" style="height:82.0%"></div><div class="lb">17-19</div></div><div><div class="num">20</div><div class="b" style="height:17.1%"></div><div class="lb">19-21</div></div></div></div></div><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">异常类型分布</h2><div style="font-size:12px;color:#5C6B78">今日新增 2 件</div></div><div class="cb"><div class="donut-wrap"><div class="donut" style="background:conic-gradient(#0F3B5D 0.00deg 180.00deg,#2878B5 180.00deg 240.00deg,#245A7A 240.00deg 300.00deg,#9BAAB8 300.00deg 360.00deg)"><div class="mid"><div><b>6</b><span>件待处理</span></div></div></div><div class="lg"><div><i style="background:#0F3B5D"></i>破损<b>3</b></div><div><i style="background:#2878B5"></i>错件<b>1</b></div><div><i style="background:#245A7A"></i>信息不符<b>1</b></div><div><i style="background:#9BAAB8"></i>疑似重复<b>1</b></div></div></div></div></div><div class="card" style=""><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 style="margin:0">员工处理量排行</h2><div style="font-size:12px;color:#5C6B78">今日件数</div></div><div class="cb"><div class="hbar"><div class="n">林浩然</div><div class="t"><i style="width:100.0%;background:#245A7A"></i></div><div class="v">168</div></div><div class="hbar"><div class="n">吴晓丹</div><div class="t"><i style="width:90.5%;background:#245A7A"></i></div><div class="v">152</div></div><div class="hbar"><div class="n">郑凯</div><div class="t"><i style="width:79.8%;background:#245A7A"></i></div><div class="v">134</div></div><div class="hbar"><div class="n">何静</div><div class="t"><i style="width:72.0%;background:#245A7A"></i></div><div class="v">121</div></div><div class="hbar"><div class="n">马斌</div><div class="t"><i style="width:58.3%;background:#245A7A"></i></div><div class="v">98</div></div></div></div></div></div>
+</div>
+</div></body></html>
